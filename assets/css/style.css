@@ -9,37 +9,6 @@ body {
   line-height: 1.5;
   color: #333;
 }
-/* 
-section 
-*/
-.section {                    /* なるべく同じセクションを拡張するとコードがスッキリする */
-  padding: 30px 15px;
-}
-.section-secondary {
-  background-color: #efefef;
-}
-.section-headline {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  margin: 0 0 40px;
-}
-/* 
-about 
-*/
-.about {
-  margin: 0;
-  display: flex;
-}
-/*.about-image {}*/
-.about-caption {
-  padding-left: 15px;
-}
-.about-headline {
-  margin: 0 0 20px;
-  font-size: 30px;
-}
-/*.about-description {}*/
 
 /* 
 grid 
@@ -63,6 +32,39 @@ grid
 .grid-cols-4 > .grid-item {/*4カラムの場合*/
     width: 25%;
   }
+
+/* 
+section 
+*/
+.section {                    /* なるべく同じセクションを拡張するとコードがスッキリする */
+  padding: 30px 15px;
+}
+.section-secondary {
+  background-color: #efefef;
+}
+.section-headline {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 40px;
+}
+
+/* 
+about 
+*/
+.about {
+  margin: 0;
+  display: flex;
+}
+/*.about-image {}*/
+.about-caption {
+  padding-left: 15px;
+}
+.about-headline {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+/*.about-description {}*/
 
 /* 
 feature 
