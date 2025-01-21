@@ -39,9 +39,11 @@ about
 }
 /*.about-description {}*/
 .grid {
-    margin: 0;/*デフォルトでmarginがあるので0にする*/
-    padding: 0;/*デフォルトでpaddingがあるので0にする*/
+    margin: 0;/*ulタグにデフォルトでmarginがあるので0にする*/
+    padding: 0;/*ulタグにデフォルトでpaddingがあるので0にする*/
     display: flex;
+    align-items: center;/*display:flexの子要素を中央に配置する*/
+    justify-content: center;/*display:flex; が指定されている場合に効果を発揮*/
 }
 .grid-item {
     list-style: none;/*デフォルトでlist-style（・）があるのでnoneにする*/
