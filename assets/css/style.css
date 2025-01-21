@@ -57,3 +57,19 @@ about
 .grid-col-4 > .grid-item {/*4カラムの場合*/
     width: 25%;
   }
+
+.feature {
+    text-align: center;
+    padding: 0 15px;
+}
+.feature-headline {
+    font-weight: bold   ;
+    margin: 0 0 20px;
+}
+.feature-image {
+    margin: 0 0 20px;
+}
+.feature-description {
+    margin: 0;
+    text-align: left;
+}
