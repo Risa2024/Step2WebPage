@@ -156,10 +156,12 @@
                 <table class="form-table">
                     <tr><!--trは行を作る-->
                         <th><!--thは表の見出し-->
-                           Menu
+                            <label for="menu">
+                                Menu
+                            </label>
                         </th>
                         <td><!--tdは表のデータ-->
-                            <select name="" id=""><!--nameはバックエンド連携時に使用-->
+                            <select class="select" name="" id="menu"><!--nameはバックエンド連携時に使用-->
                                 <option value="1">Menu1</option><!--optionは選択肢-->
                                 <option value="2">Menu2</option><!--value：セレクトされたメニューをバックエンドに通信する時に使用-->
                                 <option value="3">Menu3</option>
@@ -173,7 +175,7 @@
                             </label>
                         </th>
                         <td>
-                            <input type="text" id="name">
+                            <input class="input" type="text" id="name">
                         </td>
 
                     </tr>
@@ -184,7 +186,7 @@
                             </label>
                         </th>
                         <td>
-                            <input type="email" id="email">
+                            <input class="input" type="email" id="email">
                         </td>
                     </tr>
                     <tr>
@@ -192,13 +194,13 @@
                             Gender
                         </th>
                         <td>
-                            <label><!--テキストをクリックしても選択される(inputだと小さくて入力しにくいため)-->
+                            <label class="radio"><!--テキストをクリックしても選択される(inputだと小さくて入力しにくいため)-->
                             <input type="radio" name="gender" value="male"> Male<!--データに渡す時にvalueを使用する-->
                             </label>
-                            <label>
+                            <label class="radio">
                             <input type="radio" name="gender" value="female"> Female
                             </label>
-                            <label>
+                            <label class="radio">
                             <input type="radio" name="gender" value="other"> Other
                             </label>
                             <!--radioは単一選択、checkboxは複数選択-->
@@ -206,12 +208,19 @@
 
                     </tr>
                     <tr>
-                        <th></th>
-                        <td></td>
-
+                        <th>
+                            <label for="detail">
+                                Detail
+                            </label>
+                        </th>
+                        <td>
+                            <textarea class="textarea" cols="30" rows="10"></textarea>
+                        </td>
                     </tr>
-
                 </table>
+                <button class="button" type="submit">Submit</button>
+                <!--typeはボタンの種類。formタグを使用しボタンを押したら送信される場合にはtype="submit"を使用する-->
+                <!--ギミックをつける場合はtype="button"を使用する-->
             </form>
 
         
