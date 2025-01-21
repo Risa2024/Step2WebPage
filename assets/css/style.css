@@ -48,6 +48,10 @@ section
   font-weight: bold;
   margin: 0 0 40px;
 }
+.section-button {
+    margin-top: 40px;
+    text-align: center;
+}
 
 /* 
 about 
@@ -144,4 +148,21 @@ avator
     overflow: hidden;/* border-radiusとoverflowを同時に指定すると、角丸になる*/
 }
 
-
+/* 
+button 
+*/  
+.button{
+    display: inline-block;/*インライン要素でありブロックレベル要素の振る舞いもできる。上下左右にpadding,marginが効く*/
+    color: #fff;/*ボタンの文字色*/
+    font-weight: bold;/*ボタンの文字を太くする*/
+    background-color: #333;/*ボタンの背景色*/
+    text-align: center;/*ボタンの文字を中央に配置する*/
+    padding: 15px 60px;/*ボタンの余白*/
+    text-decoration: none;/*ボタンのデフォルトのアンダーラインを消す*/
+    border-radius: 5px;/*ボタンの角を丸くする*/
+    box-shadow: 5px 5px 0 #bbb; /*ボタンの影*/
+    transition: box-shadow .25s;/*ボタンの影を0.25秒で変化させる*/
+}
+.button:hover {
+    box-shadow: 0 0 0 #bbb; /*ボタンの影を消す*/
+}
