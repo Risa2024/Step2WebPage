@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/* Base style */
+/* 
+Base style 
+*/
 body {
   font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans",
     "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "sans-serif";
@@ -38,6 +40,10 @@ about
   font-size: 30px;
 }
 /*.about-description {}*/
+
+/* 
+grid 
+*/
 .grid {
     margin: 0;/*ulタグにデフォルトでmarginがあるので0にする*/
     padding: 0;/*ulタグにデフォルトでpaddingがあるので0にする*/
@@ -58,6 +64,9 @@ about
     width: 25%;
   }
 
+/* 
+feature 
+*/
 .feature {
     text-align: center;
     padding: 0 15px;
@@ -74,6 +83,9 @@ about
     text-align: left;
 }
 
+/* 
+card 
+*/
 .card {
     padding: 0 10px;
 }
@@ -110,11 +122,14 @@ about
     margin:0;
 }
 
+/* 
+avator 
+*/
 .avator {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: start;
+    flex-direction: row-reverse;/*子要素を逆順に配置する*/
+    align-items: center;/*子要素を中央に配置する*/
+    justify-content: start;/*子要素を左に配置する*/
     padding: 10px;
 }
 .avator-name {
@@ -123,8 +138,8 @@ about
 }
 .avator-image {
     margin: 0;
-    border-radius: 50px;
-    overflow: hidden;
+    border-radius: 50%;
+    overflow: hidden;/* border-radiusとoverflowを同時に指定すると、角丸になる*/
 }
 
 
