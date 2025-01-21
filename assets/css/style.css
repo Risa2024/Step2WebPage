@@ -251,9 +251,26 @@ footer
 }
 .footer-mapinfo {/*上下合わせて合計100％*/
     width: 40%;
-    padding: 15px;/*横幅40%,padding30pxが入っている。
+    padding: 15px;/*横幅40%,padding30pxが入っている。*/
 }
-.footer-maplogo {}
-.footer-mapaddress {}
-.footer-line {}
-.footer-copy {}
+.footer-maplogo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer-maplogo > svg {
+    fill: transparent;/*svgの色を透明にする*/
+    margin-right: 10px;
+}
+.footer-mapaddress {
+    font-style: normal;/*デフォルトでイタリックになっているのでnormalにする*/
+}
+.footer-mapaddress > a {
+    color: #fff;
+}
+.footer-line {
+    border-color: #444;
+}
+.footer-copy {
+    display: block;/*ブロックレベル要素にする*/
+    text-align: center;
+}
