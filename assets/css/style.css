@@ -12,7 +12,9 @@ body {
 label , input , select , textarea ,button {
     cursor: pointer;/*マウスポインターをポインターにする(指マークになる）*/
 }
-
+button {
+    border: 0;/*ボタンの枠線を消す*/
+}
 /* 
 grid 
 */
@@ -169,7 +171,9 @@ button
 .button:hover {
     box-shadow: 0 0 0 #bbb; /*ボタンの影を消す*/
 }
-
+.button.button-submission {
+    background-color: #92d3ca;
+}
 /* 
 .serect, .input , .radio, .textarea
 */
@@ -195,4 +199,23 @@ button
     border: 1px solid #ccc;
     min-width: 500px;
     min-height: 100px;/*縦幅を最低でも100pxに維持する*/
+}
+
+/*
+form
+*/
+/*.form{}*/
+.form-table {
+    margin: 0 auto;/*ブロックレベル要素を中央寄せしたい時によく使う。中央に配置する。ブロックレベル要素のタグに対して、marginが上下は０だけど、左右をautoにすると中央寄せになる*/   
+}
+/*.form-table tr {*/
+.form-table th {
+    text-align: 10px;/*表の見出しを右寄せにする*/
+}
+.form-table td {
+    padding: 10px;/*表のデータを左寄せにする*/
+}
+.form-button {
+    margin-top: 20px;
+    text-align: center;
 }
