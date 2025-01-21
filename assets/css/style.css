@@ -48,13 +48,13 @@ about
 .grid-item {
     list-style: none;/*デフォルトでlist-style（・）があるのでnoneにする*/
 }
-.grid-col-2 > .grid-item {/*2カラムの場合*/ /* >は子孫要素を指定する*/
+.grid-cols-2 > .grid-item {/*2カラムの場合*/ /* >は子孫要素を指定する*/
     width: 50%;
   }
-.grid-col-3 > .grid-item {/*3カラムの場合*/
-    width: 33.333333%;
+.grid-cols-3 > .grid-item {/*3カラムの場合*/
+    width: 33.33333333333333%;
   }
-.grid-col-4 > .grid-item {/*4カラムの場合*/
+.grid-cols-4 > .grid-item {/*4カラムの場合*/
     width: 25%;
   }
 
@@ -73,3 +73,21 @@ about
     margin: 0;
     text-align: left;
 }
+
+.card {
+    padding: 0 10px;
+}
+.card-link {
+    display: block;/*リンクタグはインラインなのでブロック要素にする*/
+    color: #333;/*リンクタグの色がデフォルトだと青なので#333にする*/
+    text-decoration: none;/*リンクタグのデフォルトのアンダーラインを消す*/
+}
+.card-label {}
+.card-image {}
+.card-info {}
+.card-time {}
+.card-headline {}
+
+.avator {}
+.avator-name {}
+.avator-image {}
