@@ -231,3 +231,29 @@ works
 .works > img {
     margin: 0 15px;
 }
+
+/*
+footer
+*/
+.footer {
+    background-color:#333;
+    color: #fff;
+}
+.footer-map {
+   margin: 0;/*デフォルトのマージンを消す*/
+   padding: 40px 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.footer-map > iframe {
+    width: 60%;
+}
+.footer-mapinfo {/*上下合わせて合計100％*/
+    width: 40%;
+    padding: 15px;/*横幅40%,padding30pxが入っている。
+}
+.footer-maplogo {}
+.footer-mapaddress {}
+.footer-line {}
+.footer-copy {}
