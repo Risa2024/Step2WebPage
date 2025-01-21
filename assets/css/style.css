@@ -59,6 +59,34 @@ section
 }
 
 /* 
+hero 
+*/
+.hero {
+    width: 100vw;/*ビューポートの横幅を100%にする*/
+    height: 100vh;/*ビューポートの縦幅を100%にする*/
+    position: relative;/*子要素の基準位置になる。絶対配置するために必要*/
+    overflow: hidden;/*子要素がはみ出したら隠す*/
+}
+.hero > strong {
+    position: absolute;/*絶対配置する*/
+    z-index: 2;/*要素の重なり順を指定する。大きい数ほど前面に配置される*/
+    top: 50%;/*上から50%の位置に配置する*/
+    left: 50%;/*左から50%の位置に配置する*/
+    transform: translate(-50%, -50%);/*要素を中央に配置する。top,left,transformの３つが揃うと要素を中央に配置できるテクニック*/
+    font-size: 120px;
+    color: #fff;/*文字の色*/
+    width: 100%;/*横幅を親要素いっぱいに広げる*/
+    text-align: center;
+    
+}
+.hero > video {
+    position: absolute;/*絶対配置する*/
+    z-index: 1;
+    width: auto;
+    height: 105%;
+    
+}
+/* 
 about 
 */
 .about {
@@ -273,4 +301,5 @@ footer
 .footer-copy {
     display: block;/*ブロックレベル要素にする*/
     text-align: center;
+    padding: 10px;
 }
