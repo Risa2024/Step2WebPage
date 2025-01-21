@@ -10,8 +10,11 @@ body {
 /* 
 section 
 */
-.section {
+.section {                    /* なるべく同じセクションを拡張するとコードがスッキリする */
   padding: 30px 15px;
+}
+.section-secondary {
+  background-color: #efefef;
 }
 .section-headline {
   text-align: center;
