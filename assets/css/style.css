@@ -38,3 +38,20 @@ about
   font-size: 30px;
 }
 /*.about-description {}*/
+.grid {
+    margin: 0;/*デフォルトでmarginがあるので0にする*/
+    padding: 0;/*デフォルトでpaddingがあるので0にする*/
+    display: flex;
+}
+.grid-item {
+    list-style: none;/*デフォルトでlist-style（・）があるのでnoneにする*/
+}
+.grid-col-2 > .grid-item {/*2カラムの場合*/ /* >は子孫要素を指定する*/
+    width: 50%;
+  }
+.grid-col-3 > .grid-item {/*3カラムの場合*/
+    width: 33.333333%;
+  }
+.grid-col-4 > .grid-item {/*4カラムの場合*/
+    width: 25%;
+  }
