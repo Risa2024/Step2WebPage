@@ -155,23 +155,54 @@
             <form class="form" action="">
                 <table class="form-table">
                     <tr><!--trは行を作る-->
-                        <th></th><!--thは表の見出し-->
-                        <td></td><!--tdは表のデータ-->
+                        <th><!--thは表の見出し-->
+                           Menu
+                        </th>
+                        <td><!--tdは表のデータ-->
+                            <select name="" id=""><!--nameはバックエンド連携時に使用-->
+                                <option value="1">Menu1</option><!--optionは選択肢-->
+                                <option value="2">Menu2</option><!--value：セレクトされたメニューをバックエンドに通信する時に使用-->
+                                <option value="3">Menu3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="name"><!--forは対象のidを指定する。labelが指定されていると自動的にフォーカスがあたる-->
+                                Name
+                            </label>
+                        </th>
+                        <td>
+                            <input type="text" id="name">
+                        </td>
 
                     </tr>
                     <tr>
-                        <th></th>
-                        <td></td>
-
+                        <th>
+                            <label for="email">
+                                Email
+                            </label>
+                        </th>
+                        <td>
+                            <input type="email" id="email">
+                        </td>
                     </tr>
                     <tr>
-                        <th></th>
-                        <td></td>
-
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td></td>
+                        <th>
+                            Gender
+                        </th>
+                        <td>
+                            <label><!--テキストをクリックしても選択される(inputだと小さくて入力しにくいため)-->
+                            <input type="radio" name="gender" value="male"> Male<!--データに渡す時にvalueを使用する-->
+                            </label>
+                            <label>
+                            <input type="radio" name="gender" value="female"> Female
+                            </label>
+                            <label>
+                            <input type="radio" name="gender" value="other"> Other
+                            </label>
+                            <!--radioは単一選択、checkboxは複数選択-->
+                        </td>
 
                     </tr>
                     <tr>
