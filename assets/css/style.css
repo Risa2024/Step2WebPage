@@ -46,19 +46,17 @@ grid
   /*4カラムの場合*/
   width: 25%;
 }
-@media screen and (max-width: 768px){
-    .grid {
-        display: block;
-    }
-    .grid-col-2 > .grid-item,
-    .grid-col-3 > .grid-item,
-    .grid-col-4 > .grid-item {
-        width: 100%;
-        margin: 20px 0;
-    }
-
+@media screen and (max-width: 768px) {
+  .grid {
+    display: block;
+  }
+  .grid-cols-2 > .grid-item,
+  .grid-cols-3 > .grid-item,
+  .grid-cols-4 > .grid-item {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
-
 
 /* 
 section 
@@ -72,13 +70,25 @@ section
 }
 .section-headline {
   text-align: center;
-  font-size: 40px;
+  font-size: 40 0 0px;
   font-weight: bold;
   margin: 0 0 40px;
 }
 .section-button {
   margin-top: 40px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 20px 10px;
+  }
+  .section-headline {
+    font-size: 30px;
+    margin: 0 0 20px;
+  }
+  .section-button {
+    margin: 20px 0 0;
+  }
 }
 
 /* 
@@ -122,6 +132,11 @@ header
 .header-nav-item > a:hover {
   border-bottom: 2px solid #333; /*下線の色を#333にする*/
 }
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 12px;
+  }
+}
 
 /* 
 hero 
@@ -158,6 +173,11 @@ hero
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 768px) {
+  .hero > strong {
+    font-size: 50px;
+  }
+}
 
 /* 
 about 
@@ -175,22 +195,22 @@ about
   font-size: 30px;
 }
 /*.about-description {}*/
-@media screen and (max-width: 768px){
-    .about {
-        display: block;
-    }
-    .about-image {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-    .about-headline {
-        font-size: 20px;
-        text-align: center;
-    }
+@media screen and (max-width: 768px) {
+  .about {
+    display: block;
+  }
+  .about-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-headline {
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 /* 
-feature 
+feature
 */
 .feature {
   text-align: center;
@@ -200,7 +220,7 @@ feature
   font-weight: bold;
   margin: 0 0 20px;
 }
-.feature-image {
+.feature-img {
   margin: 0 0 20px;
 }
 .feature-description {
@@ -315,14 +335,13 @@ button
   min-width: 500px;
   min-height: 100px; /*縦幅を最低でも100pxに維持する*/
 }
-@media screen and (max-width: 768px){
-    .select,
-    .input,
-    .textarea {
-        min-width: auto;
-        width: 100%;
-
-    }
+@media screen and (max-width: 768px) {
+  .select,
+  .input,
+  .textarea {
+    min-width: auto;
+    width: 100%;
+  }
 }
 
 /*
@@ -343,14 +362,14 @@ form
   margin-top: 20px;
   text-align: center;
 }
-@media screen and (max-width: 768px){
-    .form-table,
+@media screen and (max-width: 768px) {
+  .form-table,
     .form-table tbody,/*デフォルトのtbodyが悪さをしているので追加*/
     .form-table tr,
     .form-table th,
     .form-table td {
-        display: block;
-    }
+    display: block;
+  }
 }
 
 /*
@@ -364,15 +383,15 @@ works
 .works > img {
   margin: 0 15px;
 }
-@media screen and (max-width: 768px){
-    .works {
-        margin: 20px 0;
-        padding: 10px;
-    }
-    .works > img {
-        width: 100px;
-        margin: 5px;
-    }
+@media screen and (max-width: 768px) {
+  .works {
+    margin: 20px 0;
+    padding: 10px;
+  }
+  .works > img {
+    width: 100px;
+    margin: 5px;
+  }
 }
 /*
 footer
@@ -418,17 +437,17 @@ footer
   text-align: center;
   padding: 10px;
 }
-@media screen and (max-width: 768px){
-    .footer-map {
-        padding: 15px;
-        display: block;
-    }
-    .footer-map > iframe {
-        width: 100%;
-        height: 200px;
-    }
-    .footer-mapinfo {
-        width: 100%;
-        text-align: center;
-    }
+@media screen and (max-width: 768px) {
+  .footer-map {
+    padding: 15px;
+    display: block;
+  }
+  .footer-map > iframe {
+    width: 100%;
+    height: 200px;
+  }
+  .footer-mapinfo {
+    width: 100%;
+    text-align: center;
+  }
 }
