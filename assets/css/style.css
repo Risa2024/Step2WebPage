@@ -69,7 +69,7 @@ hero
 }
 .hero > strong {
     position: absolute;/*絶対配置する*/
-    z-index: 2;/*要素の重なり順を指定する。大きい数ほど前面に配置される*/
+    z-index: 3;/*要素の重なり順を指定する。大きい数ほど前面に配置される。Hello Worldを最前面に配置したいので3*/
     top: 50%;/*上から50%の位置に配置する*/
     left: 50%;/*左から50%の位置に配置する*/
     transform: translate(-50%, -50%);/*要素を中央に配置する。top,left,transformの３つが揃うと要素を中央に配置できるテクニック*/
@@ -85,6 +85,12 @@ hero
     width: auto;
     height: 105%;
     
+}
+.hero-particles {
+    position: absolute;
+    z-index: 2;/*ビデオよりは上に行きたいので２にする*/
+    width: 100%;
+    height: 100%;
 }
 /* 
 about 
