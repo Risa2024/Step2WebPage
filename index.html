@@ -186,6 +186,8 @@
 
             <form class="form" action="">
                 <table class="form-table">
+                    <!--tableタグには、勝手にtbodyがデフォルトでついているけどここには表示されていない
+                    -->
                     <tr><!--trは行を作る-->
                         <th><!--thは表の見出し-->
                             <label for="menu">
@@ -199,7 +201,7 @@
                                 <option value="3">Menu3</option>
                             </select>
                         </td>
-                    </tr>
+                    </tr><!--勝手にtbodyがデフォルトでついているけどここには表示されていない-->
                     <tr>
                         <th>
                             <label for="name"><!--forは対象のidを指定する。labelが指定されていると自動的にフォーカスがあたる-->

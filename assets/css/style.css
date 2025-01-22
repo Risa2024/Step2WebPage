@@ -46,18 +46,19 @@ grid
   /*4カラムの場合*/
   width: 25%;
 }
-@media screen and (max-width: 768px) {
-  /*レスポンシブ。768px以下の場合に適用される*/
-  .grid {
-    display: block;
-  }
-  .grid-cols-2 > .grid-item,
-  .grid-cols-3 > .grid-item,
-  .grid-cols-4 > .grid-item {
-    width: 100%;
-    margin: 20px 0;
-  }
+@media screen and (max-width: 768px){
+    .grid {
+        display: block;
+    }
+    .grid-col-2 > .grid-item,
+    .grid-col-3 > .grid-item,
+    .grid-col-4 > .grid-item {
+        width: 100%;
+        margin: 20px 0;
+    }
+
 }
+
 
 /* 
 section 
@@ -157,6 +158,7 @@ hero
   width: 100%;
   height: 100%;
 }
+
 /* 
 about 
 */
@@ -173,6 +175,19 @@ about
   font-size: 30px;
 }
 /*.about-description {}*/
+@media screen and (max-width: 768px){
+    .about {
+        display: block;
+    }
+    .about-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-headline {
+        font-size: 20px;
+        text-align: center;
+    }
+}
 
 /* 
 feature 
@@ -300,6 +315,15 @@ button
   min-width: 500px;
   min-height: 100px; /*縦幅を最低でも100pxに維持する*/
 }
+@media screen and (max-width: 768px){
+    .select,
+    .input,
+    .textarea {
+        min-width: auto;
+        width: 100%;
+
+    }
+}
 
 /*
 form
@@ -318,6 +342,15 @@ form
 .form-button {
   margin-top: 20px;
   text-align: center;
+}
+@media screen and (max-width: 768px){
+    .form-table,
+    .form-table tbody,/*デフォルトのtbodyが悪さをしているので追加*/
+    .form-table tr,
+    .form-table th,
+    .form-table td {
+        display: block;
+    }
 }
 
 /*
