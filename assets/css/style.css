@@ -59,6 +59,49 @@ section
 }
 
 /* 
+header 
+*/
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;/*子要素を両端に配置する*/
+    align-items: center;/*子要素を中央に配置する*/
+    padding: 0 15px;
+    position: fixed;/*他の要素と関係なく常にアイテムを固定する*/
+    z-index: 10;/*ヘッダーを最前面に配置する。何よりも前面にヘッダーが来るようにする*/
+    top: 0;/*上端に配置する*/
+    left: 0;/*左端に配置する*/
+}
+.header-logo {
+    margin: 0;
+    color: transparent;/*文字を透明にする。linkのデフォルトのブルーを透明にする*/
+}
+.header-logo > a {
+   display: block;/*リンクタグはインラインなのでブロック要素にする*/
+}
+/*.header-nav {}*/
+.header-nav-list {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;/*子要素を両端に配置する*/
+    align-items: center;/*子要素を中央に配置する*/
+}
+/*.header-nav-item {}*/
+.header-nav-item > a {
+    display: block;/*リンクタグはインラインなのでブロック要素にする*/
+    padding: 10px;
+    color: #333;/*リンクタグの色がデフォルトだと青なので#333にする*/
+    text-decoration: none;/*リンクタグのデフォルトのアンダーラインを消す*/
+    font-weight: bold;
+    border-bottom: 2px solid transparent;/*下線を透明にする*/
+    transition: border-color .25s;/*下線の色を0.25秒で変化させる*/
+}
+.header-nav-item > a:hover {
+    border-bottom: 2px solid #333;/*下線の色を#333にする*/
+}
+
+
+/* 
 hero 
 */
 .hero {
@@ -192,10 +235,11 @@ button
 */  
 .button{
     display: inline-block;/*インライン要素でありブロックレベル要素の振る舞いもできる。上下左右にpadding,marginが効く*/
-    color: #fff;/*ボタンの文字色*/
-    font-weight: bold;/*ボタンの文字を太くする*/
-    background-color: #333;/*ボタンの背景色*/
-    text-align: center;/*ボタンの文字を中央に配置する*/
+    color: #fff;
+    font-weight: bold;
+    background-color: #333;
+    text-align: center;
+    margin: 30px 0; /* 上下が30px、左右が0px */
     padding: 15px 60px;/*ボタンの余白*/
     text-decoration: none;/*ボタンのデフォルトのアンダーラインを消す*/
     border-radius: 5px;/*ボタンの角を丸くする*/
