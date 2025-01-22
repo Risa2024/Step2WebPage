@@ -364,7 +364,16 @@ works
 .works > img {
   margin: 0 15px;
 }
-
+@media screen and (max-width: 768px){
+    .works {
+        margin: 20px 0;
+        padding: 10px;
+    }
+    .works > img {
+        width: 100px;
+        margin: 5px;
+    }
+}
 /*
 footer
 */
